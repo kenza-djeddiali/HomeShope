@@ -7,5 +7,7 @@ public class Main {
 
 Car car =new Car("Clio","Renault clio3 ","Renualt",2013,"rouge",1200,new int[]{123,345,567},456,20,100,"",List.from(new String[]{"","",""}));
     car.start();
+    Vehicle pake = new Bike();
+
     }
 }
