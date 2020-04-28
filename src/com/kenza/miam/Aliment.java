@@ -1,4 +1,4 @@
-package miam;
+package com.kenza.miam;
 
 public class Aliment {
     String nom;

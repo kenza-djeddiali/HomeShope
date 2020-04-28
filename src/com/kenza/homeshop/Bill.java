@@ -1,4 +1,4 @@
-package homeshop;
+package com.kenza.homeshop;
 
 import java.util.Map;
 

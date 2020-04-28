@@ -1,4 +1,4 @@
-package homeshop;
+package com.kenza.homeshop;
 
 public class Product {
     private String name;

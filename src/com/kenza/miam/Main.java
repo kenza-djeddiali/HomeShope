@@ -1,4 +1,4 @@
-package miam;
+package com.kenza.miam;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +14,6 @@ public class Main {
         petitFour.cuire(cake);
         System.out.println("");
         cake.manger();
-
 
     }
 }

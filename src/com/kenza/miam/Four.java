@@ -1,4 +1,4 @@
-package miam;
+package com.kenza.miam;
 
 public class Four {
     private Resistance resistance;
