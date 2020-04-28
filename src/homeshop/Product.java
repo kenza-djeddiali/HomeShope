@@ -5,6 +5,12 @@ public class Product {
     private String description;
     private Double price;
 
+    public Product(String name, String description, double price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
     /**
      * Display a full description of the product
      */
