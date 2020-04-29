@@ -1,11 +1,11 @@
 package com.kenza.homeshop;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class RelayDeliveryTest {
-   @Test
+    @Test
     public void Given_FreeRelay_WhenGettingDeliveryPrice_ThenGet0e() {
         Delivery delivery = new RelayDelivery(5);
         assertEquals(0.0, delivery.getPrice(), 0.01);
