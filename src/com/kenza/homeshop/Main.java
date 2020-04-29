@@ -10,11 +10,13 @@ public class Main {
         Delivery lowCostRelayDelivery = new RelayDelivery(27);
 
         Bill bill = new Bill(customer,lowCostRelayDelivery);
+        /*
         bill.addProduct(cafe, 1);
         bill.addProduct(tv, 1);
         bill.addProduct(fridge, 1);
-
+*/
         //bill.generate(new FileWriter("facture-leblanc")); //methode 1 generer un fichier
+        try {
         //methode 2 afficher dans le console
         bill.generate(new Writer() {
             @Override
@@ -32,6 +34,9 @@ public class Main {
 
             }
         });
+        }catch (NoProductInBillException e){
+            System.err.println("Pas de produit dans la facture");
+        }
         /*
             Généralisation
             Une fois que  tv  est considérée comme un  Product ,
