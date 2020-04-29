@@ -7,11 +7,31 @@ public class Main {
         Fridge fridge = new Fridge("BEKO TSE 1042 F", "Réfrigérateur BEKO 130L - Classe A+ - blanc", 189, 130, false);
 
         Customer customer = new Customer("Juste Leblanc", "19 rue Germain Pilon, Paris");
+        Delivery lowCostRelayDelivery = new RelayDelivery(27);
 
-        Bill bill = new Bill(customer);
+        Bill bill = new Bill(customer,lowCostRelayDelivery);
         bill.addProduct(cafe, 1);
         bill.addProduct(tv, 1);
         bill.addProduct(fridge, 1);
+
+        //bill.generate(new FileWriter("facture-leblanc")); //methode 1 generer un fichier
+        //methode 2 afficher dans le console
+        bill.generate(new Writer() {
+            @Override
+            public void start() {
+
+            }
+
+            @Override
+            public void writeLine(String line) {
+                System.out.println(line);
+            }
+
+            @Override
+            public void stop() {
+
+            }
+        });
         /*
             Généralisation
             Une fois que  tv  est considérée comme un  Product ,
