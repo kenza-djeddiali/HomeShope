@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="HomeShope:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>HomeShope</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="HomeShope-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="HomeShope:war exploded" />
+    </root>
+  </artifact>
+</component>
