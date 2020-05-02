@@ -5,6 +5,7 @@ com/kenza/homeshop/web/BillServlet$1.class
 com/kenza/homeshop/Bill.class
 com/kenza/homeshop/Fridge.class
 com/kenza/homeshop/Main.class
+com/kenza/homeshop/dao/ProductDAO.class
 com/kenza/Main.class
 com/kenza/garage/Bike.class
 com/kenza/paris/Parisien.class

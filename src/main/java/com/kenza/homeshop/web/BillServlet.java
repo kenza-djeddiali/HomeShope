@@ -1,6 +1,7 @@
 package com.kenza.homeshop.web;
 
 import com.kenza.homeshop.*;
+import com.kenza.homeshop.dao.ProductDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -17,6 +18,7 @@ public class BillServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
+        /*
         super.init();
         Product cafe = new Product("Philips HD7866/61", "Philips SENSEO Quadrante, Noir - 1 ou 2 tasses", 79.99);
         Product tv = new Television("TV Samsung UE49MU6292", "Smart TV LED incurvée 49\"", 599, 49, "LED");
@@ -24,6 +26,8 @@ public class BillServlet extends HttpServlet {
         products.add(cafe);
         products.add(tv);
         products.add(fridge);
+         */
+        products = new ProductDAO().getAll();
     }
 
     @Override
