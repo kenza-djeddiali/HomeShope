@@ -20,7 +20,6 @@ public class ProductDAO {
                 String name = rs.getString("name");
                 String description = rs.getString("description");
                 Double price = rs.getDouble("price");
-                System.out.println("cc");
                 products.add(new Product(name, description, price));
             }
             connection.close();
